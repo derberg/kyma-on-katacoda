@@ -1,0 +1,1 @@
+so far so good, tutorial works, you just need to be patient to work on it because of lengthy Kyma installation
