@@ -1,10 +1,10 @@
 {
   "title": "My First Scenario",
-  "description": "doesn't seem to work",
+  "description": "some stuff works",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install Kyma",
         "text": "step1.md",
         "code": "install-kyma.sh"
       }
@@ -17,7 +17,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal"
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal-iframe"
   },
   "backend": {
     "imageid": "minikube"

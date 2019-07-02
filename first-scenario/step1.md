@@ -13,3 +13,7 @@
 
 `kyma install`{{execute}}
 
+# Now some fun
+
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+
