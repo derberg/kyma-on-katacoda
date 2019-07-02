@@ -1,8 +1,6 @@
 {
   "title": "My First Scenario",
   "description": "doesn't seem to work",
-  "difficulty": "beginner",
-  "time": "10 minutes",
   "details": {
     "steps": [
       {
@@ -10,10 +8,15 @@
         "text": "step1.md",
         "code": "install-kyma.sh"
       }
-    ]
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
   },
   "environment": {
-    "hideintro": true,
     "uilayout": "terminal-terminal"
   },
   "backend": {
