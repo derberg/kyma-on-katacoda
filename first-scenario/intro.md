@@ -1,1 +1,1 @@
-This is my first tutorial using Katacoda so I'm a super noob. I'll try to install Kyma and do some basic stuff
+First ever Katakoda powered Kyma learning material.

@@ -1,10 +1,10 @@
 {
-  "title": "My First Scenario",
-  "description": "some stuff works",
+  "title": "Kyma Setup",
+  "description": "In this scenario you install Kyma CLI and Kyma version 1.2.2 on Minikube. This is WIP.",
   "details": {
     "steps": [
       {
-        "title": "Install Kyma",
+        "title": "Get Kyma Running",
         "text": "step1.md",
         "code": "install-kyma.sh"
       }

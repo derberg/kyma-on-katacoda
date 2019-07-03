@@ -1,1 +1,1 @@
-so far so good, tutorial works, you just need to be patient to work on it because of lengthy Kyma installation
+Hopefully that was fun for you. Share your feedback with us http://slack.kyma-project.io
