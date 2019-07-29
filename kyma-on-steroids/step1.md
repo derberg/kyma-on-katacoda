@@ -25,7 +25,7 @@ Get Console UI host name
 `kubectl get virtualservice core-console -n kyma-system -o jsonpath='{ .spec.hosts[0] }'`{{execute}}
 
 Get login/password
-`kubectl get secret admin-user -n kyma-system -o jsonpath="{.data.password}" | base64 --decode`
+`kubectl get secret admin-user -n kyma-system -o jsonpath="{.data.password}" | base64 --decode`{{execute}}
 
 
 

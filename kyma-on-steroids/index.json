@@ -1,6 +1,6 @@
 {
-  "title": "Kyma Setup",
-  "description": "In this scenario you install Kyma CLI and Kyma version 1.2.2 on minikube. This is WIP.",
+  "title": "Kyma on Steroids",
+  "description": "In this scenario you install Kyma on dedicated environment. This is WIP.",
   "details": {
     "steps": [
       {

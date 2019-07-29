@@ -1,1 +1,1 @@
-First ever Katakoda powered Kyma learning material in minikube.
+First ever Katakoda powered Kyma running on dedicated environment.
