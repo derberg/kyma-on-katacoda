@@ -1,1 +1,1 @@
-First ever Katakoda powered Kyma learning material.
+First ever Katakoda powered Kyma learning material in Kyma specific environment.
