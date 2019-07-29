@@ -1,6 +1,6 @@
 {
   "title": "Kyma Setup",
-  "description": "In this scenario you install Kyma CLI and Kyma version 1.2.2 on Minikube. This is WIP.",
+  "description": "In this scenario you install Kyma CLI and Kyma version 1.2.2 on Kyma specific cluster. This is WIP.",
   "details": {
     "steps": [
       {
