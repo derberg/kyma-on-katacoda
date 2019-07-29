@@ -1,0 +1,1 @@
+Hopefully that was fun for you. Share your feedback with us http://slack.kyma-project.io

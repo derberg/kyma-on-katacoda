@@ -1,0 +1,1 @@
+First ever Katakoda powered Kyma learning material in minikube.

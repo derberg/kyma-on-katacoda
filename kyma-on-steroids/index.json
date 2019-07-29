@@ -1,0 +1,27 @@
+{
+  "title": "Kyma Setup",
+  "description": "In this scenario you install Kyma CLI and Kyma version 1.2.2 on minikube. This is WIP.",
+  "details": {
+    "steps": [
+      {
+        "title": "Get Kyma Running",
+        "text": "step1.md",
+        "code": "install-kyma.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "kyma-cluster"
+  }
+}
