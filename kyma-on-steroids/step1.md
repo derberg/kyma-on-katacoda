@@ -3,12 +3,16 @@ Script environment is available here: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_H
 # Setup K8s cluster
 
 `launch.sh`{{execute}}
+and make sure it has tiller on it
+`kubectl apply -f https://raw.githubusercontent.com/kyma-project/kyma/1.3.0/installation/resources/tiller.yaml`{{execute}}
 
-# Get latest Kyma
+# Trigger installation
 
 `kubectl apply -f https://github.com/kyma-project/kyma/releases/download/1.3.0/kyma-installer-cluster.yaml`{{execute}}
 
-# Kyma installation
+validate if it is ready `kubectl get pods --all-namespaces`{{execute}}
+
+# Installation progress
 
 Check if Kyma installer and tiller are running:
 `kubectl get pods --all-namespaces`{{execute}}
