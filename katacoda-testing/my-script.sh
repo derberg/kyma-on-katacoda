@@ -9,7 +9,7 @@ COUNTER=0
 
 while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$MINIKUBE_STATUS" ]; do
   (( COUNTER++ ))
-  echo "Keep calm, there are $LIMIT possibilities and so far it is attempt number $COUNTER"
+  echo "Minikube is almost ready, $LIMIT checks left and so far it is attempt number $COUNTER"
   MINIKUBE_STATUS="$(kubectl get pod -n kube-system | grep kube-apiserver-minikube || :)"
   sleep 5
 done
@@ -33,7 +33,7 @@ COUNTER=0
 
 while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$TILLER_STATUS" ]; do
   (( COUNTER++ ))
-  echo "Keep calm, there are $LIMIT possibilities and so far it is attempt number $COUNTER"
+  echo "Tiller is almost ready, $LIMIT checks left and so far it is attempt number $COUNTER"
   TILLER_STATUS="$(kubectl get deploy tiller-deploy -n kube-system -o jsonpath='{.status.availableReplicas}' || :)"
   sleep 3
 done
