@@ -1,10 +1,10 @@
 {
-  "title": "Kyma on Steroids",
-  "description": "In this scenario you install Kyma on dedicated environment. This is WIP.",
+  "title": "Testing Katacode features",
+  "description": "This tutorial may change any time",
   "details": {
     "steps": [
       {
-        "title": "Get Kyma Running",
+        "title": "One at a time",
         "text": "step1.md",
         "code": "my-script.sh"
       }
@@ -17,11 +17,9 @@
     }
   },
   "environment": {
-    "showdashboard": true,
-    "dashboard": "Dashboard",
-    "uilayout": "terminal-iframe"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kyma-cluster"
+    "imageid": "minikube-running"
   }
 }
