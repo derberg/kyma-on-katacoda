@@ -4,18 +4,18 @@ tar -xzvf helm-"v2.16.0"-linux-amd64.tar.gz
 mv ./linux-amd64/{helm,tiller} /usr/local/bin
 
 echo "Waiting for minikube to be up..."
-LIMIT=30
+LIMIT=20
 COUNTER=0
 
-while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$STATUS" ]; do
+while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$MINIKUBE_STATUS" ]; do
   (( COUNTER++ ))
   echo "Keep calm, there are $LIMIT possibilities and so far it is attempt number $COUNTER"
-  STATUS="$(kubectl get pod -n kube-system | grep kube-apiserver-minikube || :)"
-  sleep 3
+  MINIKUBE_STATUS="$(kubectl get pod -n kube-system | grep kube-apiserver-minikube || :)"
+  sleep 5
 done
 
 # In case apiserver is not available get minikube logs
-if [[ -z "$STATUS" ]]; then
+if [[ -z "$MINIKUBE_STATUS" ]]; then
   exit 1
 fi
 
@@ -26,6 +26,25 @@ kubectl -n kube-system create serviceaccount tiller
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 helm init --service-account=tiller
 
+echo "Waiting for tiller to be up..."
+LIMIT=20
+COUNTER=0
+
+
+while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$TILLER_STATUS" ]; do
+  (( COUNTER++ ))
+  echo "Keep calm, there are $LIMIT possibilities and so far it is attempt number $COUNTER"
+  TILLER_STATUS="$(kubectl get deploy tiller-deploy -n kube-system -o jsonpath='{.status.availableReplicas}' || :)"
+  sleep 3
+done
+
+# In case apiserver is not available get minikube logs
+if [[ -z "$TILLER_STATUS" ]]; then
+  exit 1
+fi
+
+echo "Tiller is up"
+
 clear 
 
-kubectl get deploy -n kube-system | grep tiller-deploy
+echo "Kubernetes with Minikube and proper Helm setup are in place to start with the tutorial"
