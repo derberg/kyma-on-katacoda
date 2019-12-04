@@ -1,0 +1,27 @@
+{
+  "title": "Kyma on Steroids",
+  "description": "In this scenario you install Kyma on dedicated environment. This is WIP.",
+  "details": {
+    "steps": [
+      {
+        "title": "Get Kyma Running",
+        "text": "step1.md",
+        "code": "my-script.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "kyma-cluster"
+  }
+}
