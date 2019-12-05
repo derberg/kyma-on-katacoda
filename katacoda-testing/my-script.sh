@@ -4,8 +4,8 @@ tar -xzvf helm-"v2.16.0"-linux-amd64.tar.gz
 mv ./linux-amd64/{helm,tiller} /usr/local/bin
 
 echo "Waiting for minikube to be up..."
-LIMIT=20
-COUNTER=30
+LIMIT=30
+COUNTER=0
 
 while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$MINIKUBE_STATUS" ]; do
   (( COUNTER++ ))
