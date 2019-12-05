@@ -5,7 +5,7 @@ mv ./linux-amd64/{helm,tiller} /usr/local/bin
 
 echo "Waiting for minikube to be up..."
 LIMIT=20
-COUNTER=0
+COUNTER=30
 
 while [ ${COUNTER} -lt ${LIMIT} ] && [ -z "$MINIKUBE_STATUS" ]; do
   (( COUNTER++ ))
