@@ -1,5 +1,7 @@
 {
-    "scenarios": [
+  "title": "Rafter in Action",
+  "icon": "fa-katacoda",  
+  "courses": [
       {
         "title": "Testing Katacode features title",
         "description": "Kyma Setup description",
