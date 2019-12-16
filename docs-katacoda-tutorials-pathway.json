@@ -1,0 +1,9 @@
+{
+    "scenarios": [
+      {
+        "title": "Testing Katacode features title",
+        "description": "Kyma Setup description",
+        "id": "basic"
+      }
+    ]
+  }
