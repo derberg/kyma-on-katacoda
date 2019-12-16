@@ -1,9 +1,9 @@
 {
-    "courses": [
+    "scenarios": [
       {
         "title": "Testing Katacode features title",
         "description": "Kyma Setup description",
-        "course_id": "katacoda-tutorials/basic"
+        "id": "katacoda-tutorials/basic"
       }
     ]
   }
